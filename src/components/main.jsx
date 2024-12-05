@@ -1,27 +1,35 @@
 import React from "react";
+import { Link } from 'react-router-dom'; // Import Link component
 
 const Home = () => {
   return (
     <>
-      <div className="hero border-1 pb-3">
-        <div className="card bg-dark text-white border-0 mx-3">
-          <img
-            className="card-img img-fluid"
-            src="./assets/enchere.jpeg"
-            alt="Card"
-            height={500}
-          />
-          <div className="card-img-overlay d-flex align-items-center">
-            <div className="container">
-              <h5 className="card-title fs-1 text fw-lighter">Welcome to Style Spark </h5>
-              <p className="card-text fs-5 d-none d-sm-block ">
-                your ultimate destination for curated elegance, cutting-edge technology, and fashion-forward flair.<br/> 
-                At StyleSpark, we believe in transforming your shopping experience into a journey of self-expression and discovery
-              </p>
-            </div>
-          </div>
-        </div>
+     <div className="hero-section">
+  <div className="card bg-dark text-white border-0">
+    <img
+      className="card-img img-fluid"
+      src="./assets/enchere.jpeg"
+      alt="Background"
+      style={{ height: "100vh", objectFit: "cover" }}
+    />
+    <div className="card-img-overlay hero-overlay d-flex align-items-center justify-content-center text-center">
+      <div className="container py-5 px-4 rounded bg-dark bg-opacity-25 shadow">
+        <h1 className="hero-title fw-bold text-uppercase text-light display-3 mb-3">
+          Bienvenue chez <span className="text-primary">Elmarché</span>
+        </h1>
+        <p className="hero-text text-light fs-5 lh-lg">
+          Découvrez des poissons et fruits de mer frais, pêchés chaque jour dans les eaux de l’île de Djerba. <br />
+          <span className="fw-semibold">La qualité et la fraîcheur</span> sont notre promesse pour vos repas d’exception.
+        </p>
+        <Link to="/product" className="btn btn-primary btn-lg mt-4 px-5 shadow">
+          Explorez Nos Produits
+        </Link>
       </div>
+    </div>
+  </div>
+</div>
+
+
     </>
   );
 };

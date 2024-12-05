@@ -1,88 +1,88 @@
 [
   {
     "id": 1,
-    "title": "Product 1",
-    "price": 20,
-    "description": "Description for Product 1",
+    "title": "Calamar",
+    "price": 30,
+    "description": "Une chair tendre et légèrement sucrée, idéale en friture ou farci. ",
     "image": "/assets/calamar.png",
     "rating": { "rate": 4.5, "count": 120 }
   },
   {
     "id": 2,
-    "title": "Product 2",
-    "price": 35,
-    "description": "Description for Product 2",
+    "title": "Crabe bleu",
+    "price": 6,
+    "description": "Un crustacé unique, apprécié pour sa chair délicate et savoureuse.  ",
     "image": "/assets/crabe-bleu.png",
     "rating": { "rate": 4.0, "count": 90 }
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Crevette grise",
+    "price": 35,
+    "description": "Délicate et savoureuse, elle est parfaite pour les plats légers et raffinés.  ",
     "image": "/assets/crevette.png",
     "rating": { "rate": 5.0, "count": 75 }
   },
     {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Dorade royale",
+    "price": 60,
+    "description": "Une chair fine et savoureuse, excellente grillée ou au four. ",
     "image": "/assets/daurade.png",
     "rating": { "rate": 5.0, "count": 75 }
   },
     {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Loup",
+    "price": 65,
+    "description": "Chair ferme et raffinée, un classique des recettes grillées ou en croûte de sel.",
     "image": "/assets/laoup.png",
     "rating": { "rate": 5.0, "count": 75 }
   },
     {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Mérou",
+    "price": 54,
+    "description": "Poisson noble à la chair tendre et savoureuse, idéal pour les plats mijotés ou grillés.  ",
     "image": "/assets/merou.png",
     "rating": { "rate": 5.0, "count": 75 }
   },
     {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Poulpe",
+    "price": 34,
+    "description": "Une texture tendre et un goût unique, parfait pour les salades ou les plats mijotés.  ",
     "image": "/assets/poulpe.png",
     "rating": { "rate": 5.0, "count": 75 }
   },
     {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Rouget",
+    "price": 28,
+    "description": "Poisson au goût délicat et légèrement sucré, parfait pour les recettes méditerranéennes.",
     "image": "/assets/rouget.png",
     "rating": { "rate": 5.0, "count": 75 }
   },
     {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Sardine",
+    "price": 5,
+    "description": "Riche en saveurs et en nutriments, parfaite pour les grillades ou en marinade.  ",
     "image": "/assets/sardine.png",
     "rating": { "rate": 5.0, "count": 75 }
   },  {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Seiche",
+    "price": 22,
+    "description": "Polyvalente et délicieuse, elle s’adapte à une variété de recettes. ",
     "image": "/assets/seiche.png",
     "rating": { "rate": 5.0, "count": 75 }
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "price": 50,
-    "description": "Description for Product 3",
+    "title": "Sbares",
+    "price": 10,
+    "description": "Poisson local de Djerba, prisé pour sa fraîcheur et sa saveur authentique.",
     "image": "/assets/sbares.jpg",
     "rating": { "rate": 5.0, "count": 75 }
   }

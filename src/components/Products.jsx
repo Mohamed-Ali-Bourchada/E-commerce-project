@@ -69,14 +69,14 @@ const Products = () => {
                   <p className="card-text">{product.description.substring(0, 90)}...</p>
                 </div>
                 <ul className="list-group list-group-flush">
-                  <li className="list-group-item lead">TND {product.price}</li>
+                  <li className="list-group-item lead">TND {product.price}/kg</li>
                 </ul>
                 <div className="card-body">
                   <Link to={"/product/" + product.id} className="btn btn-dark m-1">
-                    Buy Now
-                  </Link>
+                Acheter   </Link>
                   <button className="btn btn-dark m-1" onClick={() => addProduct(product)}>
-                    Add to Cart
+                        Ajouter au panier         
+
                   </button>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Products = () => {
       <div className="container my-3 py-3">
         <div className="row">
           <div className="col-12">
-            <h2 className="display-5 text-center">Latest Products</h2>
+            <h2 className="display-5 text-center">Poissons du jour</h2>
             <hr />
           </div>
         </div>

@@ -8,45 +8,39 @@ const AboutPage = () => {
         <h1 className="text-center">About Us</h1>
         <hr />
         <p className="lead text-center">
-          Welcome to StyleSpark, where passion meets innovation, and style is not just a trend but a way of life. At StyleSpark, we are more than an e-commerce platform; we are curators of elegance, purveyors of the latest trends in fashion, jewelry, and electronics. Our journey began with a simple yet profound belief: that everyone deserves access to products that inspire and elevate. Each item in our collection is carefully handpicked to reflect the perfect blend of sophistication, quality, and modernity.
+          
 
-Our commitment extends beyond providing a seamless shopping experience; it's about creating a community that celebrates individuality and embraces the evolving landscape of style. Whether you're a trendsetter, a tech enthusiast, or someone who appreciates timeless elegance, StyleSpark is your canvas to express yourself.
+Bienvenue chez Elmarché, votre destination privilégiée pour des poissons frais directement issus des eaux cristallines de l’île de Djerba. Nous sommes passionnés par la mer et déterminés à offrir à nos clients des produits de la plus haute qualité, pêchés quotidiennement par des pêcheurs locaux.  
 
-As a team of dedicated enthusiasts, we strive to bring you not just products but a lifestyle – one that resonates with your unique taste and aspirations. Join us on this journey of self-expression and discovery. StyleSpark is more than a destination; it's a statement. Welcome to a world where trends ignite, and your style takes center stage.
+Notre engagement est simple : vous apporter le meilleur de la mer, avec un service de proximité et un respect total de l'environnement marin. Que vous soyez un amateur de fruits de mer ou un professionnel de la gastronomie, nous sommes là pour répondre à vos besoins en vous garantissant fraîcheur et authenticité.  
+
+Rejoignez-nous pour savourer le goût unique des trésors marins de Djerba !  
         </p>
 
         <h2 className="text-center py-4">Our Products</h2>
         <div className="row">
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Mens's Clothing</h5>
-              </div>
+              <img className="card-img-top img-fluid" src="assets/seiche.png" alt="" height={160} />
+              
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Women's Clothing</h5>
-              </div>
+              <img className="card-img-top img-fluid" src="assets/merou.png" alt="" height={160} />
+              
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Jewelery</h5>
-              </div>
+              <img className="card-img-top img-fluid" src="assets/calamar.png" alt="" height={160} />
+              
             </div>
           </div>
           <div className="col-md-3 col-sm-6 mb-3 px-3">
             <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Electronics</h5>
-              </div>
+              <img className="card-img-top img-fluid" src="assets/sardine.png" alt="" height={160} />
+             
             </div>
           </div>
         </div>

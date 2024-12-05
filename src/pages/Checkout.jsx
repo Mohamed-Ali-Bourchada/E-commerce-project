@@ -2,6 +2,7 @@ import React from "react";
 import { Footer, Navbar } from "../components";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 const Checkout = () => {
   const state = useSelector((state) => state.handleCart);
 
@@ -10,9 +11,9 @@ const Checkout = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
-            <h4 className="p-3 display-5">No item in Cart</h4>
+            <h4 className="p-3 display-5">Aucun article dans le panier</h4>
             <Link to="/" className="btn btn-outline-dark mx-4">
-              <i className="fa fa-arrow-left"></i> Continue Shopping
+              <i className="fa fa-arrow-left"></i> Continuer vos achats
             </Link>
           </div>
         </div>
@@ -31,6 +32,7 @@ const Checkout = () => {
     state.map((item) => {
       return (totalItems += item.qty);
     });
+
     return (
       <>
         <div className="container py-5">
@@ -38,20 +40,20 @@ const Checkout = () => {
             <div className="col-md-5 col-lg-4 order-md-last">
               <div className="card mb-4">
                 <div className="card-header py-3 bg-light">
-                  <h5 className="mb-0">Order Summary</h5>
+                  <h5 className="mb-0">Résumé de la commande</h5>
                 </div>
                 <div className="card-body">
                   <ul className="list-group list-group-flush">
                     <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                      Products ({totalItems})<span>TND{Math.round(subtotal)}</span>
+                      Produits ({totalItems})<span>TND{Math.round(subtotal)}</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center px-0">
-                      Shipping
+                      Livraison
                       <span>TND{shipping}</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                       <div>
-                        <strong>Total amount</strong>
+                        <strong>Montant total</strong>
                       </div>
                       <span>
                         <strong>TND{Math.round(subtotal + shipping)}</strong>
@@ -64,14 +66,14 @@ const Checkout = () => {
             <div className="col-md-7 col-lg-8">
               <div className="card mb-4">
                 <div className="card-header py-3">
-                  <h4 className="mb-0">Billing address</h4>
+                  <h4 className="mb-0">Adresse de facturation</h4>
                 </div>
                 <div className="card-body">
                   <form className="needs-validation" novalidate>
                     <div className="row g-3">
                       <div className="col-sm-6 my-1">
-                        <label for="firstName" className="form-label">
-                          First name
+                        <label htmlFor="firstName" className="form-label">
+                          Nom complet
                         </label>
                         <input
                           type="text"
@@ -81,13 +83,13 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Valid first name is required.
+                          Un prénom valide est requis
                         </div>
                       </div>
 
                       <div className="col-sm-6 my-1">
-                        <label for="lastName" className="form-label">
-                          Last name
+                        <label htmlFor="lastName" className="form-label">
+                          Nom de famille
                         </label>
                         <input
                           type="text"
@@ -97,93 +99,89 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Valid last name is required.
+                          Un nom de famille valide est requis
                         </div>
                       </div>
 
                       <div className="col-12 my-1">
-                        <label for="email" className="form-label">
+                        <label htmlFor="email" className="form-label">
                           Email
                         </label>
                         <input
                           type="email"
                           className="form-control"
                           id="email"
-                          placeholder="you@example.com"
+                          placeholder="vous@example.com"
                           required
                         />
                         <div className="invalid-feedback">
-                          Please enter a valid email address for shipping
-                          updates.
+                          Veuillez entrer une adresse e-mail valide pour les mises à jour d'expédition.
                         </div>
                       </div>
 
                       <div className="col-12 my-1">
-                        <label for="address" className="form-label">
-                          Address
+                        <label htmlFor="address" className="form-label">
+                          Adresse
                         </label>
                         <input
                           type="text"
                           className="form-control"
                           id="address"
-                          placeholder="1234 Main St"
+                          placeholder="1234 Rue Principale"
                           required
                         />
                         <div className="invalid-feedback">
-                          Please enter your shipping address.
+                          Veuillez entrer votre adresse de livraison
                         </div>
                       </div>
 
                       <div className="col-12">
-                        <label for="address2" className="form-label">
-                          Address 2{" "}
-                          <span className="text-muted">(Optional)</span>
+                        <label htmlFor="address2" className="form-label">
+                          Adresse 2{" "}
+                          <span className="text-muted">(Optionnel)</span>
                         </label>
                         <input
                           type="text"
                           className="form-control"
                           id="address2"
-                          placeholder="Apartment or suite"
+                          placeholder="Appartement ou suite"
                         />
                       </div>
 
                       <div className="col-md-5 my-1">
-                        <label for="country" className="form-label">
-                          Country
+                        <label htmlFor="country" className="form-label">
+                          Ville
                         </label>
                         <br />
                         <select className="form-select" id="country" required>
-                          <option value="">Choose...</option>
-                            <option>Tunisie</option>
-                          <option>algeria</option>
-
-                          <option>libya</option>
-                          <option>france</option>
-                          <option>morocco</option>
+                          <option value="">Choisir...</option>
+                          <option>Houmt souk</option>
+                          <option>Gechienne</option>
+                          <option>Fatou</option>
+                          <option>el may</option>
+                          <option>Midoun</option>
                         </select>
                         <div className="invalid-feedback">
-                          Please select a valid country.
+                          Veuillez sélectionner une ville valide
                         </div>
                       </div>
 
                       <div className="col-md-4 my-1">
-                       
                         <div className="invalid-feedback">
-                          Please provide a valid state.
+                          Veuillez fournir un état valide
                         </div>
                       </div>
 
-                  
                     </div>
 
                     <hr className="my-4" />
 
-                    <h4 className="mb-3">Payment</h4>
+                    <h4 className="mb-3">Paiement</h4>
 
                     <div className="row gy-3">
                       <div className="col-md-6">
-                        <label for="cc-name" className="form-label">
-                          Name on card
+                        <label htmlFor="cc-name" className="form-label">
+                          Nom sur la carte
                         </label>
                         <input
                           type="text"
@@ -193,16 +191,16 @@ const Checkout = () => {
                           required
                         />
                         <small className="text-muted">
-                          Full name as displayed on card
+                          Nom complet tel qu'il apparaît sur la carte
                         </small>
                         <div className="invalid-feedback">
-                          Name on card is required
+                          Le nom sur la carte est requis
                         </div>
                       </div>
 
                       <div className="col-md-6">
-                        <label for="cc-number" className="form-label">
-                          Credit card number
+                        <label htmlFor="cc-number" className="form-label">
+                          Numéro de carte de crédit
                         </label>
                         <input
                           type="text"
@@ -212,13 +210,13 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Credit card number is required
+                          Le numéro de carte de crédit est requis
                         </div>
                       </div>
 
                       <div className="col-md-3">
-                        <label for="cc-expiration" className="form-label">
-                          Expiration
+                        <label htmlFor="cc-expiration" className="form-label">
+                          Date d'expiration
                         </label>
                         <input
                           type="text"
@@ -228,12 +226,12 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Expiration date required
+                          La date d'expiration est requise
                         </div>
                       </div>
 
                       <div className="col-md-3">
-                        <label for="cc-cvv" className="form-label">
+                        <label htmlFor="cc-cvv" className="form-label">
                           CVV
                         </label>
                         <input
@@ -244,7 +242,7 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Security code required
+                          Le code de sécurité est requis
                         </div>
                       </div>
                     </div>
@@ -253,9 +251,9 @@ const Checkout = () => {
 
                     <button
                       className="w-100 btn btn-primary "
-                      type="submit" 
+                      type="submit"
                     >
-                      Continue to checkout
+                      Passer à la caisse
                     </button>
                   </form>
                 </div>
@@ -266,11 +264,12 @@ const Checkout = () => {
       </>
     );
   };
+
   return (
     <>
       <Navbar />
       <div className="container my-3 py-3">
-        <h1 className="text-center">Checkout</h1>
+        <h1 className="text-center">Caisse</h1>
         <hr />
         {state.length ? <ShowCheckout /> : <EmptyCart />}
       </div>

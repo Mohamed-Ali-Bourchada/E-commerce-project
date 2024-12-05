@@ -1,58 +1,59 @@
 import React from 'react'
 import { Footer, Navbar } from "../components";
 import { Link } from 'react-router-dom';
+
 const Register = () => {
     return (
         <>
             <Navbar />
             <div className="container my-3 py-3">
-                <h1 className="text-center">Register</h1>
+                <h1 className="text-center">S'inscrire</h1>
                 <hr />
-                <div class="row my-4 h-100">
+                <div className="row my-4 h-100">
                     <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">
                         <form>
-                            <div class="form my-3">
-                                <label for="Name">Full Name</label>
+                            <div className="form my-3">
+                                <label htmlFor="Name">Nom complet</label>
                                 <input
                                     type="text"
-                                    class="form-control"
+                                    className="form-control"
                                     id="Name"
-                                    placeholder="Enter Your Name"
+                                    placeholder="Entrez votre nom"
                                     required
-                                    pattern="[a-zA-Z' ']+"
-                                    title='give a valid name please only characters '
+                                    pattern="[a-zA-Z' ']+" 
+                                    title="Veuillez entrer un nom valide, uniquement des caractères"
                                 />
                             </div>
-                            <div class="form my-3">
-                                <label for="Email">Email address</label>
+                            <div className="form my-3">
+                                <label htmlFor="Email">Adresse email</label>
                                 <input
                                     type="email"
-                                    class="form-control"
+                                    className="form-control"
                                     id="Email"
-                                    placeholder="name@example.com"
-                                     pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                                    title="give a pattern like this [name@example.com]"
+                                    placeholder="nom@exemple.com"
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                    title="Veuillez entrer un email valide (ex: nom@exemple.com)"
                                     required
                                 />
                             </div>
-                            <div class="form  my-3">
-                                <label for="Password">Password</label>
+                            <div className="form my-3">
+                                <label htmlFor="Password">Mot de passe</label>
                                 <input
                                     type="password"
-                                    class="form-control"
+                                    className="form-control"
                                     id="Password"
-                                    placeholder="Password"
+                                    placeholder="Mot de passe"
                                     required
                                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                    title="Le mot de passe doit contenir au moins un chiffre, une lettre majuscule et minuscule, et au moins 8 caractères"
                                 />
                             </div>
                             <div className="my-3">
-                                <p>Already has an account? <Link to="/login" className="text-decoration-underline text-info">Login</Link> </p>
+                                <p>Vous avez déjà un compte ? <Link to="/login" className="text-decoration-underline text-info">Se connecter</Link></p>
                             </div>
                             <div className="text-center">
-                                <button class="my-2 mx-auto btn btn-dark" type="submit" >
-                                    Register
+                                <button className="my-2 mx-auto btn btn-dark" type="submit">
+                                    S'inscrire
                                 </button>
                             </div>
                         </form>
@@ -61,7 +62,7 @@ const Register = () => {
             </div>
             <Footer />
         </>
-    )
+    );
 }
 
-export default Register
+export default Register;

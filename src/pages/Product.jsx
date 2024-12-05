@@ -73,17 +73,15 @@ const LocalProduct = () => {
           <p className="lead">
             {product.rating.rate} <i className="fa fa-star"></i>
           </p>
-          <h3 className="display-6 my-4">TND {product.price}</h3>
+          <h3 className="display-6 my-4">TND {product.price} /kg</h3>
           <p className="lead">{product.description}</p>
           <button
             className="btn btn-outline-dark"
             onClick={() => addProduct(product)}
           >
-            Add to Cart
-          </button>
+Ajouter au panier          </button>
           <Link to="/cart" className="btn btn-dark mx-3">
-            Go to Cart
-          </Link>
+Aller au panier          </Link>
         </div>
       </div>
     </div>
@@ -106,14 +104,13 @@ const LocalProduct = () => {
             </div>
             <div className="card-body">
               <Link to={`/product/${item.id}`} className="btn btn-dark m-1">
-                Buy Now
+                Acheter
               </Link>
               <button
                 className="btn btn-dark m-1"
                 onClick={() => addProduct(item)}
               >
-                Add to Cart
-              </button>
+Ajouter au panier              </button>
             </div>
           </div>
         ))}
@@ -128,7 +125,7 @@ const LocalProduct = () => {
         <div className="row">{loading ? <Loading /> : <ShowProduct />}</div>
         <div className="row my-5 py-5">
           <div className="d-none d-md-block">
-            <h2>You may also Like</h2>
+            <h2>Vous pourriez aussi aimer</h2>
             <Marquee pauseOnHover={true} pauseOnClick={true} speed={50}>
               {loading2 ? <Loading /> : <ShowSimilarProducts />}
             </Marquee>
