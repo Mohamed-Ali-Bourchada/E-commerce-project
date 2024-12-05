@@ -6,36 +6,18 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 import { Link } from "react-router-dom";
+import products from "../data/products.json"; // Import your custom products data
 
 const Products = () => {
-  const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
+  const [data, setData] = useState(products); // Set custom products as the initial data
+  const [filter, setFilter] = useState(products); // Set custom products as the initial filter
   const [loading, setLoading] = useState(false);
-  let componentMounted = true;
 
   const dispatch = useDispatch();
 
   const addProduct = (product) => {
-    dispatch(addCart(product))
-  }
-
-  useEffect(() => {
-    const getProducts = async () => {
-      setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products/");
-      if (componentMounted) {
-        setData(await response.clone().json());
-        setFilter(await response.json());
-        setLoading(false);
-      }
-
-      return () => {
-        componentMounted = false;
-      };
-    };
-
-    getProducts();
-  }, []);
+    dispatch(addCart(product));
+  };
 
   const Loading = () => {
     return (
@@ -65,22 +47,12 @@ const Products = () => {
     );
   };
 
-  const filterProduct = (cat) => {
-    const updatedList = data.filter((item) => item.category === cat);
-    setFilter(updatedList);
-  }
+ 
+
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons text-center py-5">
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => setFilter(data)}>All</button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("women's clothing")}>
-            Women's Clothing
-          </button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("jewelery")}>Jewelery</button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("electronics")}>Electronics</button>
-        </div>
+
 
         {filter.map((product) => {
           return (
@@ -93,16 +65,11 @@ const Products = () => {
                   height={300}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">
-                    {product.title.substring(0, 12)}...
-                  </h5>
-                  <p className="card-text">
-                    {product.description.substring(0, 90)}...
-                  </p>
+                  <h5 className="card-title">{product.title.substring(0, 12)}...</h5>
+                  <p className="card-text">{product.description.substring(0, 90)}...</p>
                 </div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item lead">TND {product.price}</li>
-                 
                 </ul>
                 <div className="card-body">
                   <Link to={"/product/" + product.id} className="btn btn-dark m-1">
@@ -114,12 +81,12 @@ const Products = () => {
                 </div>
               </div>
             </div>
-
           );
         })}
       </>
     );
   };
+
   return (
     <>
       <div className="container my-3 py-3">

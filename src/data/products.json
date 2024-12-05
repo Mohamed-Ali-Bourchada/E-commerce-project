@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "title": "Product 1",
+    "price": 20,
+    "description": "Description for Product 1",
+    "image": "/assets/calamar.png",
+    "rating": { "rate": 4.5, "count": 120 }
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "price": 35,
+    "description": "Description for Product 2",
+    "image": "/assets/crabe-bleu.png",
+    "rating": { "rate": 4.0, "count": 90 }
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/crevette.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },
+    {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/daurade.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },
+    {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/laoup.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },
+    {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/merou.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },
+    {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/poulpe.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },
+    {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/rouget.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },
+    {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/sardine.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },  {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/seiche.png",
+    "rating": { "rate": 5.0, "count": 75 }
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "price": 50,
+    "description": "Description for Product 3",
+    "image": "/assets/sbares.jpg",
+    "rating": { "rate": 5.0, "count": 75 }
+  }
+]
